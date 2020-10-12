@@ -9,3 +9,9 @@ main:
 
 run-2.61: 2.61
 	./2.61
+
+2.60: ejercicio-2.60.c
+	gcc $(CFLAGS) $(BINARIO) ejercicio-2.60.c  -o 2.60
+
+run-2.60: 2.60
+	./2.60
