@@ -8,6 +8,7 @@
 #include <stdint.h>
 
 #define CANTIDAD_BITS 32
+#define MAX_UINT32 4294967295
 
 void inicializarBinario(char binario[]);
 

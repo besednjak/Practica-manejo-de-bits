@@ -32,6 +32,6 @@ void imprimirBinario(char binario[]){
             printf(" ");
         }
     }
-    printf("\n\n");
+    printf("\n");
 }
 
