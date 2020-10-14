@@ -14,6 +14,8 @@ void inicializarBinario(char binario[]);
 
 void decimalABinario(uint32_t x, char binario[]);
 
-void imprimirBinario(char binario[]);
+void imprimirNumeroEnBinario(uint32_t x);
+
+void imprimirFormato(char binario[]);
 
 #endif //DECIMALABINARIO_H

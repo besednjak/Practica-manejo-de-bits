@@ -24,7 +24,14 @@ void decimalABinario(uint32_t decimal, char binario[]){
     }
 }
 
-void imprimirBinario(char binario[]){
+void imprimirNumeroEnBinario(uint32_t x){
+    char xBinario[CANTIDAD_BITS];
+    decimalABinario(x, xBinario);
+    printf("Binario: ");
+    imprimirFormato(xBinario);
+}
+
+void imprimirFormato(char binario[]){
     printf("\n");
     for(int i = 0; i < CANTIDAD_BITS; i++){
         printf("%c", binario[i]);

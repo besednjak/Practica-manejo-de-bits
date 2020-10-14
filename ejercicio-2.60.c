@@ -18,13 +18,6 @@ que devuelve el entero val con su i-ésimo byte cambiado al valor de rempl. Los 
 //4 bytes = xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx
 //           byte 3   byte 2   byte 1   byte 0
 
-void imprimirNumeroEnBinario(uint32_t x){
-    char xBinario[CANTIDAD_BITS];
-    decimalABinario(x, xBinario);
-    printf("Binario: ");
-    imprimirBinario(xBinario);
-}
-
 uint32_t borrarByte(uint32_t val, int posicion){
     uint32_t mascara = (0xff << (posicion * 8));
     uint32_t borrador = ~mascara;

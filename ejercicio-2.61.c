@@ -18,13 +18,6 @@ El código debe seguir las reglas de programación para enteros a nivel bit. Com
 #include <stdint.h>
 #include "decimalABinario/decimalABinario.h"
 
-void imprimirNumeroEnBinario(uint32_t x){
-    char xBinario[CANTIDAD_BITS];
-    decimalABinario(x, xBinario);
-    printf("Binario: ");
-    imprimirBinario(xBinario);
-}
-
 void cualquierBitEs1(uint32_t x){
     uint32_t y = 0xFFFFFFFF;
     printf("\nMascara A, ");

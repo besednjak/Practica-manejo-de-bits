@@ -28,12 +28,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bce17b75-3afc-4a4c-882e-0dfa3f8ec903" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ejercicio-2.66.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/decimalABinario.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/decimalABinario.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejercicio-2.60.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejercicio-2.61.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/decimalABinario/decimalABinario.c" beforeDir="false" afterPath="$PROJECT_DIR$/decimalABinario/decimalABinario.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/decimalABinario/decimalABinario.h" beforeDir="false" afterPath="$PROJECT_DIR$/decimalABinario/decimalABinario.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejercicio-2.60.c" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio-2.60.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejercicio-2.61.c" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio-2.61.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602450362465</updated>
       <workItem from="1602450363887" duration="19467000" />
-      <workItem from="1602649040819" duration="2212000" />
+      <workItem from="1602649040819" duration="4336000" />
     </task>
     <servers />
   </component>
