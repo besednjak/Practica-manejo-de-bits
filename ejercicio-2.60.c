@@ -63,15 +63,15 @@ uint8_t pedirNumeroDeReemplazo(){
 
 uint32_t pedirNumeroACambiar(){
 
-    int entrada = 0;
+    uint32_t entrada = 0;
 
     printf("Ingrese un numero positivo: ");
-    scanf("%d", &entrada);
+    scanf("%u", &entrada);
 
     printf("Numero ingresado en ");
-    imprimirNumeroEnBinario((uint32_t) entrada);
+    imprimirNumeroEnBinario(entrada);
 
-    return (uint32_t) entrada;
+    return entrada;
 }
 
 int main(){
