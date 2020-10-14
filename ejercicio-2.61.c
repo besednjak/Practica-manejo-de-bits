@@ -16,7 +16,7 @@ El código debe seguir las reglas de programación para enteros a nivel bit. Com
 
 #include <stdio.h>
 #include <stdint.h>
-#include "decimalABinario.h"
+#include "decimalABinario/decimalABinario.h"
 
 void imprimirNumeroEnBinario(uint32_t x){
     char xBinario[CANTIDAD_BITS];

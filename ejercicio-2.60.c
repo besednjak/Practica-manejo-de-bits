@@ -13,7 +13,7 @@ que devuelve el entero val con su i-ésimo byte cambiado al valor de rempl. Los 
 
 #include <stdio.h>
 #include <stdint.h>
-#include "decimalABinario.h"
+#include "decimalABinario/decimalABinario.h"
 
 //4 bytes = xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx
 //           byte 3   byte 2   byte 1   byte 0

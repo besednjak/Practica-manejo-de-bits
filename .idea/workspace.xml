@@ -29,10 +29,11 @@
   <component name="ChangeListManager">
     <list default="true" id="bce17b75-3afc-4a4c-882e-0dfa3f8ec903" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.61" beforeDir="false" afterPath="$PROJECT_DIR$/2.61" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/decimalABinario.c" beforeDir="false" afterPath="$PROJECT_DIR$/decimalABinario.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/decimalABinario.h" beforeDir="false" afterPath="$PROJECT_DIR$/decimalABinario.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejercicio-2.61.c" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio-2.61.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/decimalABinario.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/decimalABinario.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejercicio-2.60.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejercicio-2.61.c" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +61,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Makefile.2.61">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="2.61" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
@@ -92,7 +93,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602450362465</updated>
-      <workItem from="1602450363887" duration="12151000" />
+      <workItem from="1602450363887" duration="19467000" />
+      <workItem from="1602649040819" duration="2212000" />
     </task>
     <servers />
   </component>
@@ -109,27 +111,32 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="717" y="317" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602458781698">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="717" y="317" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602458781698" />
-    <state width="1874" height="270" key="GridCell.Tab.0.bottom" timestamp="1602459758846">
+    <state x="698" y="264" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602650399274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1874" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602459758846" />
-    <state width="1874" height="270" key="GridCell.Tab.0.center" timestamp="1602459758845">
+    <state x="698" y="264" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602650399274" />
+    <state width="1874" height="270" key="GridCell.Tab.0.bottom" timestamp="1602472130175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1874" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602459758845" />
-    <state width="1874" height="270" key="GridCell.Tab.0.left" timestamp="1602459758845">
+    <state width="1874" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602472130175" />
+    <state width="1874" height="270" key="GridCell.Tab.0.center" timestamp="1602472130175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1874" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602459758845" />
-    <state width="1874" height="270" key="GridCell.Tab.0.right" timestamp="1602459758845">
+    <state width="1874" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602472130175" />
+    <state width="1874" height="270" key="GridCell.Tab.0.left" timestamp="1602472130175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1874" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602459758845" />
+    <state width="1874" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602472130175" />
+    <state width="1874" height="270" key="GridCell.Tab.0.right" timestamp="1602472130175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1874" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602472130175" />
   </component>
 </project>

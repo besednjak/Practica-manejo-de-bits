@@ -1,5 +1,5 @@
 CFLAGS = -O2 -std=c99 -Wall -Wextra -pedantic
-BINARIO = decimalABinario.c
+BINARIO = decimalABinario/decimalABinario.c
 main:
 	clear
 	"Seleccione un numero de ejercicio para ejecutar."
