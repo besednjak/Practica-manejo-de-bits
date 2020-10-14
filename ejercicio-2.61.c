@@ -50,16 +50,20 @@ void cualquierBitEs0EnByteMasSignificativo(uint32_t x){
     printf("D. Tiene algun bit en 0 en el byte mas significativo? Resultado: %d.\n", resultado);
 }
 
-int main(){
-
-    int entrada = 0;
+uint32_t pedirNumero(){
+    uint32_t entrada = 0;
 
     printf("Ingrese un numero positivo: ");
-    scanf("%d", &entrada);
+    scanf("%u", &entrada);
 
-    uint32_t x = (unsigned int) entrada;
     printf("Numero ingresado en ");
-    imprimirNumeroEnBinario(x);
+    imprimirNumeroEnBinario(entrada);
+
+    return entrada;
+}
+
+int main(){
+    uint32_t x = pedirNumero();
 
     /*A.*/ cualquierBitEs1(x);
     /*B.*/ cualquierBitEs0(x);
