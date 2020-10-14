@@ -15,11 +15,6 @@ que devuelve el entero val con su i-ésimo byte cambiado al valor de rempl. Los 
 #include <stdint.h>
 #include "decimalABinario.h"
 
-#define MASCARA_PARA_BORRAR_BYTE_0 0xffffff00
-#define MASCARA_PARA_BORRAR_BYTE_1 0xffff00ff
-#define MASCARA_PARA_BORRAR_BYTE_2 0xff00ffff
-#define MASCARA_PARA_BORRAR_BYTE_3 0x00ffffff
-
 //4 bytes = xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx
 //           byte 3   byte 2   byte 1   byte 0
 
@@ -30,22 +25,10 @@ void imprimirNumeroEnBinario(uint32_t x){
     imprimirBinario(xBinario);
 }
 
-uint32_t borrarByte(uint32_t val, int byteABorrar){
-    uint32_t resultado = 0;
-
-    if(byteABorrar == 0){
-        resultado = (val & MASCARA_PARA_BORRAR_BYTE_0);
-    }
-    else if(byteABorrar == 1){
-        resultado = (val & MASCARA_PARA_BORRAR_BYTE_1);
-    }
-    else if(byteABorrar == 2){
-        resultado = (val & MASCARA_PARA_BORRAR_BYTE_2);
-    }
-    else if(byteABorrar == 3){
-        resultado = (val & MASCARA_PARA_BORRAR_BYTE_3);
-    }
-    return resultado;
+uint32_t borrarByte(uint32_t val, int posicion){
+    uint32_t mascara = (0xff << (posicion * 8));
+    uint32_t borrador = ~mascara;
+    return (val & borrador);
 }
 
 uint32_t mascaraEn32Bits(uint8_t byteAMover, int posicion){
@@ -55,13 +38,9 @@ uint32_t mascaraEn32Bits(uint8_t byteAMover, int posicion){
 }
 
 uint32_t replace_byte(uint32_t val, int i, uint8_t rempl){
-    uint32_t resultado = 0;
     uint32_t reemplazoEn32Bits = mascaraEn32Bits(rempl, i);
     val = borrarByte(val, i);
-
-    resultado = (val | reemplazoEn32Bits);
-
-    return resultado;
+    return (val | reemplazoEn32Bits);
 }
 
 int pedirByteACambiar(){
@@ -105,13 +84,13 @@ uint32_t pedirNumeroACambiar(){
 int main(){
     uint32_t numeroACambiar = pedirNumeroACambiar();
     uint8_t numeroDeReemplazo = pedirNumeroDeReemplazo();
-    int byteACambiar = pedirByteACambiar();
+    int posicion = pedirByteACambiar();
 
-    uint32_t resultado = replace_byte(numeroACambiar, byteACambiar, numeroDeReemplazo);
+    uint32_t resultado = replace_byte(numeroACambiar, posicion, numeroDeReemplazo);
 
     printf("Resultado en ");
     imprimirNumeroEnBinario(resultado);
-    printf("Resultado en uint32_t: %d\n", (uint32_t) resultado);
+    printf("Resultado en uint32_t: %u\n", resultado);
 
     return 0;
 }
